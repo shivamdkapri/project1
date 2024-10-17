@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8SXZ0Y25R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z8SXZ0Y25R');
+</script>
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Booking</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script>
+
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <div class="bar">
+        <div class="left">
+            <img class="logo" src="./Logowithname.jpg" alt="logo" width="120px">
+        </div>
+        <div class="right">
+            <ul class="item">
+                <li><a href="/index.html" class="listitem">Home</a></li>
+                <li><a href="/book.html" class="listitem">Book ticket</a></li>
+                <li><a href="/gettickets.html" class="listitem">Ticket history</a></li>
+
+                <!-- <li><a href="mobile.html" class="listitem">Logout</a></li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="subbody"
+    style="padding: 30px;
+    ">
+        <div id="details" style="
+            padding: 20px;
+            padding-inline-start: 20vw;
+            padding-inline-end: 20vw;
+            border: solid black;
+            font-weight: bold;
+            border-color: #F6E96B;
+            border-radius: 20px;
+            padding-block: 10px;
+            margin-bottom: 5vh;
+        "></div>
+        <div class="container">
+            <h1>Ride  Booking</h1>
+            <form id="bookingForm">
+                <label for="pname">Name:</label>
+                <input type="text" id="pname" name="pname" required>
+
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" required>
+
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="passengers">Number of Passengers:</label>
+                <input type="number" id="passengers" name="passengers" min="1" required>
+
+                <button type="submit">Book Ticket</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="book.js"></script>
+</body>
+
+</html>

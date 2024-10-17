@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8SXZ0Y25R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z8SXZ0Y25R');
+</script>
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booked Tickets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:#BEDC74; justify-content: center; align-items: center;">
+    <div class="bar">
+        <div class="left">
+            <img class="logo" src="./Logowithname.jpg" alt="logo" width="120px">
+        </div>
+        <div class="right">
+            <ul class="item">
+                <li><a href="index.html" class="listitem">Home</a></li>
+                <li><a href="book.html" class="listitem">Book Ride</a></li>
+                <li><a href="gettickets.html" class="listitem">Ride Booking History</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="padding: 10px;">
+        <h1>Booked Ride</h1>
+        <div id="data-container" style="padding: 20px; background-color: rgb(50, 200, 150); border-radius: 20px; border: solid black; width: 90vw;"></div>
+    </div>
+    <script type="module" src="tickets.js"></script>
+</body>
+</html>
